@@ -1,0 +1,13 @@
+[
+  {
+    "slug": "ai-personal-finance",
+    "title": "AI-Powered Personal Finance App",
+    "summary": "A full-stack mobile app that tracks finances, teaches money literacy with an AI assistant, and connects users through a social feed.",
+    "stack": ["Flutter", "Firebase", "Dart"],
+    "live_url": "https://ai-powered-personal-finance.web.app",
+    "repo_url": "",
+    "problem": "Many people struggle to manage their finances and lack accessible, personalized financial education. This thesis project explores how AI and social features can make personal finance guidance practical and engaging.",
+    "built": "Built the full-stack app end to end: Flutter mobile UI, Firebase backend (auth, database, hosting), expense tracking, an AI-powered virtual literacy assistant, and a social platform where users can share progress and tips.",
+    "learned": "Integrating the AI assistant and third-party APIs was the hardest part — handling async calls, error states, and keeping the UI responsive when data was slow or unavailable taught me a lot about resilient app design."
+  }
+]

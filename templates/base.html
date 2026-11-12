@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Junecel Hamoy — Developer{% endblock %}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <nav class="max-w-4xl mx-auto flex justify-between items-center p-6">
+    <a href="/" class="font-bold text-lg">Junecel Hamoy</a>
+    <div class="space-x-4 text-sm">
+      <a href="/projects" class="hover:underline">Projects</a>
+      <a href="/static/resume.pdf" class="hover:underline" download>Resume</a>
+      <a href="https://github.com/junecelhamoy" class="hover:underline">GitHub</a>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-6 pb-16">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 py-8">
+    © 2026 Junecel Hamoy · Built with Flask
+  </footer>
+</body>
+</html>

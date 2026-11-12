@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}{{ project.title }} — Your Name{% endblock %}
+
+{% block content %}
+<a href="/projects" class="text-sm text-gray-500">← Back to projects</a>
+
+<h1 class="text-3xl font-bold mt-3 mb-1">{{ project.title }}</h1>
+<p class="text-gray-600 mb-4">{{ project.summary }}</p>
+<p class="text-sm text-gray-400 mb-6">{{ project.stack | join(" · ") }}</p>
+
+<div class="space-x-3 mb-8">
+  <a href="{{ project.live_url }}" class="bg-black text-white px-4 py-2 rounded" target="_blank">Live demo</a>
+  <a href="{{ project.repo_url }}" class="border px-4 py-2 rounded" target="_blank">GitHub</a>
+</div>
+
+<section class="space-y-6 text-gray-800">
+  <div>
+    <h2 class="font-semibold mb-1">Problem</h2>
+    <p>{{ project.problem }}</p>
+  </div>
+  <div>
+    <h2 class="font-semibold mb-1">What I built</h2>
+    <p>{{ project.built }}</p>
+  </div>
+  <div>
+    <h2 class="font-semibold mb-1">What I learned</h2>
+    <p>{{ project.learned }}</p>
+  </div>
+</section>
+{% endblock %}
